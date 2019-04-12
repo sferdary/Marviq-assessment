@@ -1,6 +1,6 @@
 # Marviq-assassment
-A single page production dashboard created in Laravel. </ br>
-This dashboard gives an brief overview of the daily production in a company. </ br>
+A single page production dashboard created in Laravel.  
+This dashboard gives an brief overview of the daily production in a company.  
 [Live preview](https://www.savatarian.com/samuel/marviq-assassment/)
 
 ### Navigation:
