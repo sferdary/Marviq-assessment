@@ -15,4 +15,4 @@ This dashboard gives an brief overview of the daily production in a company.
 
 The nett gross charts are made with [MorrisJS](http://morrisjs.github.io/morris.js/)
 
-*Created by [S. Ferdary](https://github.com/sferdary) for [Marviq B.V.](https://www.marviq.com/nl)*
+*Dashboard created by [S. Ferdary](https://github.com/sferdary) for [Marviq B.V.](https://www.marviq.com/nl)*
