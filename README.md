@@ -1,7 +1,7 @@
 # Marviq-assesssment
 A single page production dashboard created in Laravel.  
 This dashboard gives an brief overview of the daily production in a company.  
-[Live preview](https://www.savatarian.com/samuel/marviq-assassment/)
+[Live preview](https://www.savatarian.com/samuel/marviq-assessment/)
 
 ### Navigation:
 - [Dashboard page](https://github.com/sferdary/Marviq-assassment/blob/master/resources/views/pages/index.blade.php)
