@@ -11,6 +11,8 @@ This dashboard gives an brief overview of the daily production in a company.
   - [Partials](https://github.com/sferdary/Marviq-assassment/tree/master/resources/views/partials)
   - [SCSS](https://github.com/sferdary/Marviq-assassment/tree/master/resources/sass)
 - [Machine controller](https://github.com/sferdary/Marviq-assassment/blob/master/app/Http/Controllers/MachineController.php)
+  - [Production Model](https://github.com/sferdary/Marviq-assassment/blob/master/app/Production.php)
+  - [Runtime Model](https://github.com/sferdary/Marviq-assassment/blob/master/app/Runtime.php)
 - [Routes](https://github.com/sferdary/Marviq-assassment/blob/master/routes/web.php)
 
 The nett gross charts are made with [MorrisJS](http://morrisjs.github.io/morris.js/)
