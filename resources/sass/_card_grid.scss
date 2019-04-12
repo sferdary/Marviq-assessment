@@ -1,0 +1,52 @@
+.nett-production {
+  grid-area: nett-production;
+}
+
+.scrap {
+  grid-area: scrap;
+}
+
+.tot-production {
+  grid-area: tot-production;
+}
+
+.temperature {
+  grid-area: temperature;
+}
+
+.down-time {
+  grid-area: down-time;
+}
+
+.oee {
+  grid-area: oee;
+}
+
+.production-table {
+  grid-area: production-table;
+}
+
+div.card-grid {
+  display: grid;
+  grid-gap: 5px;
+}
+
+
+@media all and (max-width: 411px) {
+  div.card-grid {
+    grid-template-areas:
+            'nett-production      scrap'
+            'tot-production       temperature'
+            'down-time            oee'
+            'production-table     production-table';
+  }
+}
+
+@media all and (min-width: 412px) {
+  div.card-grid {
+    grid-template-areas:
+            'nett-production    scrap               tot-production'
+            'temperature        down-time           oee'
+            'production-table   production-table    production-table';
+  }
+}

@@ -1,0 +1,62 @@
+.nett-production {
+  grid-area: nett-production; }
+
+.scrap {
+  grid-area: scrap; }
+
+.tot-production {
+  grid-area: tot-production; }
+
+.temperature {
+  grid-area: temperature; }
+
+.down-time {
+  grid-area: down-time; }
+
+.oee {
+  grid-area: oee; }
+
+.production-table {
+  grid-area: production-table; }
+
+div.card-grid {
+  display: grid;
+  grid-gap: 5px; }
+
+@media all and (max-width: 411px) {
+  div.card-grid {
+    grid-template-areas: 'nett-production      scrap' 'tot-production       temperature' 'down-time            oee' 'production-table     production-table'; } }
+@media all and (min-width: 412px) {
+  div.card-grid {
+    grid-template-areas: 'nett-production    scrap               tot-production' 'temperature        down-time           oee' 'production-table   production-table    production-table'; } }
+.data-col {
+  width: auto;
+  padding: 3px;
+  margin: 2px;
+  background: #3A3C39 !important;
+  border-radius: 5px !important; }
+
+div.circle-diagram {
+  width: 100%;
+  height: 100%; }
+
+.card {
+  margin: 10px !important;
+  float: left; }
+
+@media all and (max-width: 411px) {
+  .card {
+    margin-left: auto !important;
+    margin-right: auto !important; } }
+text.percentage {
+  font-size: 0.5em;
+  color: #ffffff !important; }
+
+.bg-masala {
+  background: #3A3C39 !important; }
+
+.bg-shark {
+  background: #212122 !important; }
+
+.border-round {
+  border-radius: 5px !important; }
