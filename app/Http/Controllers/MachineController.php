@@ -8,24 +8,22 @@ use App\Runtime;
 
 
 /* ********************************************************************************************
-/* This is the machine controller, it contains all the functions and calculations for
-/* the machine dashboard.
-/* Every function contains its own formulas for the specific task.
-/* The results of the functions are stored in machine arrays found in the function index.
-/* There are 2 database Models used in this controller:
-/* Production -> Containing the variable $table specific for the database table 'Production'.
-/* Runtime    -> Containing the variable $table specific for the database table 'Runtime'.
-/* */
+This is the machine controller, it contains all the functions and calculations for
+the machine dashboard.
+Every function contains its own formulas for the specific task.
+The results of the functions are stored in machine arrays found in the function index.
+There are 2 database Models used in this controller:
+Production -> Containing the variable $table specific for the database table 'Production'.
+Runtime    -> Containing the variable $table specific for the database table 'Runtime'.
+*/
 class MachineController extends Controller
 {
-
-
     /* ********************************************************************************************
-    /* The index function receives an request from the form of the dashboard page, that request is
-    /* stored in the variable $datetime.
-    /* This variable will be used in all the functions that are stored in the machine arrays.
-    /* The machine arrays contain the specific data of that machine to provide the correct data.
-    /* */
+    The index function receives an request from the form of the dashboard page, that request is
+    stored in the variable $datetime.
+    This variable will be used in all the functions that are stored in the machine arrays.
+    The machine arrays contain the specific data of that machine to provide the correct data.
+    */
     public function index(Request $request)
     {
         if ($request->has('date') === true) {                                                   // If an request is made = true
@@ -71,9 +69,9 @@ class MachineController extends Controller
 
 
     /* ********************************************************************************************
-    /* The function production contains the database queries from the table "Production" and
-    /* formulas for the gross and scrap values.
-    /* */
+    The function production contains the database queries from the table "Production" and
+    formulas for the gross and scrap values.
+    */
     protected function production($machineName, $datetime)
     {
         // Initializing local variables
@@ -149,9 +147,9 @@ class MachineController extends Controller
 
 
     /* ********************************************************************************************
-    /* The function temperature contains the database queries from the table "Production" and
-    /* formulas for the minimum, maximum and average temperature.
-    /* */
+    The function temperature contains the database queries from the table "Production" and
+    formulas for the minimum, maximum and average temperature.
+    */
     protected function temperature($machineName, $datetime)
     {
         // Initializing local variables
@@ -190,9 +188,9 @@ class MachineController extends Controller
 
 
     /* ********************************************************************************************
-    /* The function runtime contains the database queries from the table "Runtime" and formulas
-    /* for the up and down time.
-    /* */
+    The function runtime contains the database queries from the table "Runtime" and formulas
+    for the up and down time.
+    */
     protected function runtime($machineName, $datetime)
     {
         // Initializing local variables
@@ -257,10 +255,10 @@ class MachineController extends Controller
 
 
     /* ********************************************************************************************
-    /* The function oee contains formulas for the performance, availebility and quality in
-    /* percentages.
-    /* This three percentages are used to calculate the oee (overall equipment efficiency).
-    /* */
+    The function oee contains formulas for the performance, availebility and quality in
+    percentages.
+    This three percentages are used to calculate the oee (overall equipment efficiency).
+    */
     protected function oee($totGross, $nettGross, $totScrap, $uptime)
     {
         if ($totGross !== 0 && $nettGross !== 0 && $totScrap !== 0 && $uptime !== 0) {      // Checking if there are any results
