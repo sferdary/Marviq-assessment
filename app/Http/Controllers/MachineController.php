@@ -84,8 +84,8 @@ class MachineController extends Controller
         $scrap = 0;
         $grossPerHour   = array();
         $scrapPerHour   = array();
-        $nettPerHour = array();
-        $chartData     = "";
+        $nettPerHour    = array();
+        $chartData      = "";
 
         for ($i = 0; $i < 24; $i++) {                           // For loop to itterate through every hour in a day (24 times)
             $datetimeFrom = date('Y-m-d H:i:s', $start);        // The correct format for the datetime_from in the database based on start time
