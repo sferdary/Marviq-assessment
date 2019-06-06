@@ -112,7 +112,7 @@ class MachineController extends Controller
 
             $grossPerHour[$i]   = $gross;                       // The sum of the hourly gross production will be stored in the array on position $i
             $scrapPerHour[$i]   = $scrap;                       // The sum of scrap per hour will be stored in the array on position $i
-            $nettPerHour[$i] = $gross - $scrap;                 // Nett production per hour will be stored in the array on position $i
+            $nettPerHour[$i]    = $gross - $scrap;              // Nett production per hour will be stored in the array on position $i
 
             // Chart data for the nett gross chart, concatinated to create JSON syntax
             $chartData .= "
@@ -200,8 +200,8 @@ class MachineController extends Controller
         $datetimeTo   = (new \DateTime($datetimeFrom))              // The datetime for datetime as end for the database query (datetimeFrom incremented by 1 hour)
             ->add(\DateInterval::createFromDateString('24 hours'));
 
-        $a = 0;
-        $b = 0;
+        $a = 0;                                                     // All even hours in one day
+        $b = 0;                                                     // All odd hours in one day
 
         $uptime   = 0;
         $downtime = 0;
